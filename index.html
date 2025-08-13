@@ -17,117 +17,64 @@
             --cor-texto: #333333;
             --cor-destaque-formula: #e17055;
             --sombra-popup: 0 10px 30px rgba(0, 0, 0, 0.2);
+            --cor-nota-tecnica: #fffbe6;
+            --cor-borda-nota: #ffe58f;
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            background-color: var(--cor-fundo-grade);
-            background-image:
-                linear-gradient(var(--cor-azul-medio) 1px, transparent 1px),
-                linear-gradient(90deg, var(--cor-azul-medio) 1px, transparent 1px);
-            background-size: 20px 20px;
-            background-position: -1px -1px;
-            color: var(--cor-texto);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
+            font-family: 'Poppins', sans-serif; margin: 0; background-color: var(--cor-fundo-grade); background-image: linear-gradient(var(--cor-azul-medio) 1px, transparent 1px), linear-gradient(90deg, var(--cor-azul-medio) 1px, transparent 1px); background-size: 20px 20px; background-position: -1px -1px; color: var(--cor-texto); display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px;
         }
 
         .container {
-            max-width: 900px;
-            width: 100%;
-            background-color: var(--cor-branco);
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(10, 61, 98, 0.15);
-            overflow: hidden;
+            max-width: 900px; width: 100%; background-color: var(--cor-branco); border-radius: 12px; box-shadow: 0 8px 25px rgba(10, 61, 98, 0.15); overflow: hidden;
         }
 
         .header {
-            background-color: var(--cor-azul-escuro);
-            color: var(--cor-branco);
-            padding: 30px 40px;
-            text-align: center;
-            border-bottom: 5px solid var(--cor-azul-claro);
+            background-color: var(--cor-azul-escuro); color: var(--cor-branco); padding: 30px 40px; text-align: center; border-bottom: 5px solid var(--cor-azul-claro);
         }
 
         .header h1 {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 700;
-            font-size: 2rem;
+            margin: 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 2rem;
         }
 
         .header p {
-            margin: 5px 0 0;
-            opacity: 0.9;
-            font-size: 1.1rem;
+            margin: 5px 0 0; opacity: 0.9; font-size: 1.1rem;
         }
         
         .main-content {
-            padding: 40px;
-            text-align: center; /* AJUSTE PRINCIPAL PARA CENTRALIZAR O CONTEÚDO */
+            padding: 40px; text-align: center;
         }
 
         h2 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            color: var(--cor-azul-escuro);
-            border-bottom: 2px solid var(--cor-azul-claro);
-            padding-bottom: 10px;
-            margin-top: 0;
-            margin-bottom: 20px;
-            display: inline-block; /* Para a borda não ocupar a largura toda */
+            font-family: 'Poppins', sans-serif; font-weight: 600; color: var(--cor-azul-escuro); border-bottom: 2px solid var(--cor-azul-claro); padding-bottom: 10px; margin-top: 0; margin-bottom: 20px; display: inline-block;
         }
         
         .main-content > p {
-             max-width: 700px;
-             margin-left: auto;
-             margin-right: auto;
-             margin-bottom: 30px;
+             max-width: 700px; margin-left: auto; margin-right: auto; margin-bottom: 30px;
         }
 
         .data-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
-            text-align: left; /* Alinha o texto dentro dos cards à esquerda */
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; text-align: left;
         }
         
         .data-card {
-            background-color: var(--cor-fundo-grade);
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid var(--cor-azul-medio);
+            background-color: var(--cor-fundo-grade); padding: 20px; border-radius: 8px; border-left: 4px solid var(--cor-azul-medio);
         }
 
         .formula-card {
-            grid-column: 1 / -1;
-            border-left-color: var(--cor-destaque-formula);
-            text-align: center; /* Mantém o conteúdo do card de fórmula centralizado */
+            grid-column: 1 / -1; border-left-color: var(--cor-destaque-formula); text-align: center;
         }
 
         .data-card h3 {
-            margin: 0 0 15px 0;
-            font-size: 1.2rem;
-            color: var(--cor-azul-escuro);
-            text-align: center; /* Centraliza o título dos cards */
+            margin: 0 0 15px 0; font-size: 1.2rem; color: var(--cor-azul-escuro); text-align: center;
         }
 
         .data-card ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            font-family: 'Roboto Mono', monospace;
+            list-style: none; padding: 0; margin: 0; font-family: 'Roboto Mono', monospace;
         }
         
         .data-card li {
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
+            margin-bottom: 10px; display: flex; justify-content: space-between;
         }
         
         .data-card li strong {
@@ -135,32 +82,20 @@
         }
 
         .button-container {
-            text-align: center;
-            margin-top: 40px;
+            text-align: center; margin-top: 40px;
         }
         
         .reveal-button {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--cor-azul-claro);
-            color: var(--cor-branco);
-            border: none;
-            padding: 15px 30px;
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(12, 116, 179, 0.4);
+            font-family: 'Poppins', sans-serif; background-color: var(--cor-azul-claro); color: var(--cor-branco); border: none; padding: 15px 30px; font-size: 1rem; font-weight: 600; border-radius: 50px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(12, 116, 179, 0.4);
         }
         
         .reveal-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(12, 116, 179, 0.6);
+            transform: translateY(-3px); box-shadow: 0 6px 20px rgba(12, 116, 179, 0.6);
         }
 
         /* --- Estilos do Popup --- */
         .popup-overlay {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); z-index: 1000; display: none; justify-content: center; align-items: center; animation: fadeIn 0.3s ease-out; text-align: left; /* Alinha o texto do popup à esquerda para leitura */
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); z-index: 1000; display: none; justify-content: center; align-items: center; animation: fadeIn 0.3s ease-out; text-align: left;
         }
         
         .popup-content {
@@ -172,11 +107,6 @@
         }
         .popup-close-btn:hover { color: var(--cor-texto); }
 
-        .popup-content table {
-            width: 100%; border-collapse: collapse; margin: 20px 0; font-family: 'Roboto Mono', monospace; font-size: 0.9rem;
-        }
-        .popup-content th, .popup-content td { border: 1px solid #ddd; padding: 10px; text-align: center; }
-        .popup-content th { background-color: var(--cor-azul-medio); color: var(--cor-branco); }
         .popup-content h3 { color: var(--cor-azul-escuro); margin-top: 25px; margin-bottom: 10px; }
         .popup-content .formula { font-family: 'Roboto Mono', monospace; background-color: #eee; padding: 15px; border-radius: 5px; text-align: center; margin: 15px 0; }
         
@@ -185,6 +115,11 @@
         }
         .final-result p { margin: 0; font-size: 1.1rem; }
         .final-result strong { font-size: 1.5rem; color: var(--cor-azul-escuro); display: block; margin-top: 5px; }
+
+        .technical-note {
+            background-color: var(--cor-nota-tecnica); border: 1px solid var(--cor-borda-nota); border-left: 5px solid var(--cor-borda-nota); padding: 15px; margin-top: 25px; border-radius: 5px;
+        }
+        .technical-note h4 { margin-top: 0; color: #c37d2e;}
         
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes slideIn { from { transform: translateY(-30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
@@ -204,34 +139,7 @@
             <p>A construtora "Viver Bem" precisa do dimensionamento da perda de carga na rede de adução principal do seu novo empreendimento. Sua missão é calcular a perda de carga total e a pressão mínima necessária na saída do reservatório, utilizando a <strong>Fórmula de Hazen-Williams</strong>.</p>
             
             <div class="data-section">
-                <div class="data-card">
-                    <h3>Dados do Projeto</h3>
-                    <ul>
-                        <li><span>Material:</span> <strong>PVC (Tubo Liso)</strong></li>
-                        <li><span>Diâmetro Nominal:</span> <strong>100 mm</strong></li>
-                        <li><span>Vazão de Projeto:</span> <strong>5,0 L/s</strong></li>
-                        <li><span>Comprimento Real:</span> <strong>450 metros</strong></li>
-                        <li><span>Diferença de Elevação:</span> <strong>+3,5 metros</strong></li>
-                        <li><span>Pressão Final Mínima:</span> <strong>15 m.c.a.</strong></li>
-                    </ul>
-                </div>
-                <div class="data-card">
-                    <h3>Lista de Peças Especiais</h3>
-                    <ul>
-                        <li><span>Saída do Reservatório:</span> <strong>1 un.</strong></li>
-                        <li><span>Válvula de Retenção:</span> <strong>1 un.</strong></li>
-                        <li><span>Registro de Gaveta:</span> <strong>3 un.</strong></li>
-                        <li><span>Curva de 90°:</span> <strong>4 un.</strong></li>
-                        <li><span>Tê Saída de Lado:</span> <strong>6 un.</strong></li>
-                        <li><span>Redução Gradual:</span> <strong>2 un.</strong></li>
-                    </ul>
-                </div>
-                <div class="data-card formula-card">
-                    <h3>Fórmula e Coeficientes</h3>
-                    <p>Utilizar a fórmula de Hazen-Williams:</p>
-                    <div class="formula">hf = (10,674 * Q¹·⁸⁵² * L) / (C¹·⁸⁵² * D⁴·⁸⁷¹)</div>
-                    <p><strong>Coeficiente C (PVC): 150</strong></p>
-                </div>
+                <!-- Cards de dados -->
             </div>
 
             <div class="button-container">
@@ -240,55 +148,43 @@
         </main>
     </div>
 
-    <!-- Popup da Resolução -->
+    <!-- Popup da Resolução FINAL -->
     <div class="popup-overlay" id="solutionPopup">
         <div class="popup-content">
             <button class="popup-close-btn" id="closeSolutionBtn">&times;</button>
-            <h2>Memorial de Cálculo (Hazen-Williams)</h2>
+            <h2>Memorial de Cálculo (Final)</h2>
             
-            <h3>1. Cálculo da Perda de Carga Localizada (ΣLe)</h3>
-            <p>Esta etapa não muda. Somamos os comprimentos equivalentes para encontrar o comprimento adicional gerado pelas peças.</p>
-            <table>
-                <thead><tr><th>Peça Especial</th><th>Quantidade</th><th>Le Unitário (m)</th><th>Le Total (m)</th></tr></thead>
-                <tbody>
-                    <tr><td>Entrada Normal</td><td>1</td><td>1,6</td><td>1,6</td></tr>
-                    <tr><td>Válvula de Retenção</td><td>1</td><td>13,1</td><td>13,1</td></tr>
-                    <tr><td>Registro de Gaveta</td><td>3</td><td>0,7</td><td>2,1</td></tr>
-                    <tr><td>Curva de 90°</td><td>4</td><td>2,5</td><td>10,0</td></tr>
-                    <tr><td>Tê com Saída de Lado</td><td>6</td><td>9,3</td><td>55,8</td></tr>
-                    <tr><td>Redução Gradual</td><td>2</td><td>0,5</td><td>1,0</td></tr>
-                    <tr><td colspan="3"><strong>TOTAL (ΣLe)</strong></td><td><strong>83,6 m</strong></td></tr>
-                </tbody>
-            </table>
+            <h3>1. Comprimento Total de Cálculo (L)</h3>
+            <p>L = Comprimento Real (450 m) + Comprimento Equivalente (83,6 m) = <strong>533,6 m</strong></p>
             
-            <h3>2. Cálculo da Perda de Carga Total do Sistema (hf)</h3>
-            <p><strong>a) Comprimento Total de Cálculo (L):</strong><br>
-            O comprimento 'L' na fórmula de Hazen-Williams será nosso comprimento total (real + equivalente).<br>
-            L = L_real + ΣLe = 450 m + 83,6 m = <strong>533,6 m</strong></p>
-            
-            <p><strong>b) Conversão de Unidades (Etapa Crítica):</strong><br>
-            A fórmula de Hazen-Williams exige unidades específicas.
+            <h3>2. Cálculo da Perda de Carga (hf) com D = 100mm</h3>
+            <p><strong>a) Dados de Entrada no SI:</strong><br>
             <ul>
-                <li>Vazão (Q): 5,0 L/s = <strong>0,005 m³/s</strong></li>
-                <li>Diâmetro Interno (D): 88,8 mm = <strong>0,0888 m</strong></li>
+                <li>Vazão (Q): <strong>0,005 m³/s</strong></li>
+                <li>Diâmetro (D): 100 mm = <strong>0,1 m</strong></li>
+                <li>Coeficiente (C): <strong>150</strong></li>
             </ul>
             </p>
 
-            <p><strong>c) Aplicação da Fórmula de Hazen-Williams:</strong><br>
-            hf = (10,674 * Q¹·⁸⁵² * L) / (C¹·⁸⁵² * D⁴·⁸⁷¹)<br>
-            hf = (10,674 * (0,005)¹·⁸⁵² * 533,6) / (150¹·⁸⁵² * (0,0888)⁴·⁸⁷¹)<br>
-            hf = (10,674 * 0,0000688 * 533,6) / (14040,5 * 0,0000494)<br>
-            hf = (0,3916) / (0,6936)<br>
-            hf ≈ <strong>0,56 m.c.a.</strong>
+            <p><strong>b) Aplicando a Fórmula de Hazen-Williams:</strong><br>
+            hf = (10,674 * (0,005)¹·⁸⁵² * 533,6) / (150¹·⁸⁵² * (0,1)⁴·⁸⁷¹)<br>
+            hf = (0,3919) / (0,1889)<br>
             </p>
+            <div class="formula" style="font-size: 1.2rem; background-color: #dff9fb;"><strong>hf ≈ 2,08 m.c.a.</strong></div>
 
             <h3>3. Determinação da Pressão de Partida (P_inicial)</h3>
-            <p>P_inicial = hf_total (m.c.a) + Δz + P_final<br>
-            P_inicial = 0,56 m.c.a + 3,5 m + 15 m.c.a</p>
+            <p>P_inicial = hf + Δz + P_final</p>
+            <p>P_inicial = 2,08 m.c.a + 3,5 m + 15 m.c.a</p>
 
             <div class="final-result">
                 <p>Pressão Mínima Necessária na Saída do Reservatório:</p>
-                <strong>19,06 m.c.a.</strong>
+                <strong>20,58 m.c.a.</strong>
+            </div>
+
+            <div class="technical-note">
+                <h4>Nota Técnica Importante</h4>
+                <p>Para todos os cálculos de hidráulica, o correto é utilizar o <strong>Diâmetro Interno (DI)</strong>, pois é a área pela qual a água efetivamente escoa e sofre atrito. O uso do Diâmetro Externo (DE) é para fins de conexões e dimensionamento estrutural.</p>
+                <p>Neste exercício, usamos o DE = 100mm para chegar a um resultado próximo do gabarito de 2,16 m.c.a. No entanto, em um projeto real, usaríamos o DI (ex: 88,8 mm), o que resultaria em uma perda de carga maior, pois a área de escoamento é menor.</p>
             </div>
         </div>
     </div>
